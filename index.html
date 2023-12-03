@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='robots'content='noindex,nofollow'>
+</head>
+<style>
+@media(prefers-color-scheme:light){
+	body{background-color:#bbb;color:#000}
+	a{color:#000;border:solid min(0.4ex ,4px);border-color:#000 rgba(0,0,0,0)rgba(0,0,0,0)}
+	a:hover{border-color:rgba(0,0,0,0)#111 rgba(0,0,0,0)}
+}
+@media(prefers-color-scheme:dark){
+	body{background-color:#222;color:#ddd}
+	a{color:#ddd;border:solid min(0.4ex,4px);border-color:#bbb rgba(0,0,0,0)rgba(0,0,0,0)}
+	a:hover{border-color:rgba(0,0,0,0)#aaa rgba(0,0,0,0)}
+}
+*{letter-spacing:0.1ch}
+:root{--a-fontSize:20px;--a-letterSpacing:0.1em}
+a{display:inline-block;margin:0 0.5ch;padding:0.125ex 0}
+a{font-size:var(--a-fontSize);text-decoration:none;letter-spacing:var(--a-letterSpacing)}
+a:hover{margin:0;padding:0.125ex 0.5ch}
+h2{font-family:serif;font-size:25px;font-weight:450;}
+.body{width:64%;margin:5% auto}
+::selection{background-color:rgba(127,127,127,0.75);}
+.getWidth{visibility:hidden;font-size:var(--a-fontSize);letter-spacing:var(--a-letterSpacing)}
+</style>
+<body>
+<h1 style='font-size:40px;font-weight:500;margin-top:10%'>Site Map</h1>
+<h2>https://zx6q.github.io/0/</h2>
+<div><a href='https://zx6q.github.io/0/'>zx6q.github.io/0/</a></div>
+<div style='margin-top:1ex'><span class='getWidth'>zx6q.github.io/0</span><a href='https://zx6q.github.io/0/index.html'>/index.html</a></div>
+<h2>https://zx6q.github.io/</h2>
+<div><a href='https://zx6q.github.io/'>zx6q.github.io/</a></div>
+<div style='margin-top:1ex'><span class='getWidth'>zx6q.github.io</span><a href='https://zx6q.github.io/404.html'>/404.html</a></div>
+<div style='margin-top:1ex'><span class='getWidth'>zx6q.github.io</span><a href='https://zx6q.github.io/index.html'>/index.html</a></div>
+</body>
+<script>
+for(const i of document.getElementsByTagName('a')){i.setAttribute('target','_blank')};
+(function(e1,e2){e2.innerHTML='<div style=\'margin:25px auto\'>'+e2.innerHTML+'</div>';if(e1){e2.innerHTML='<div class=\'body\'id=\'dark\'>'+e2.innerHTML+'</div>'}else{e2.innerHTML='<div class=\'body\'id=\'light\'>'+e2.innerHTML+'</div>'}})(window.matchMedia('(prefers-color-scheme:dark)').matches,document.body);
+</script>
+</html>
